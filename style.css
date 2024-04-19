@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color:  rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+body{
+    background-color: #011d2f;
+}
+
+.logo{
+    color: aliceblue;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo:hover{
+    color:#E47C21;
+    /* #F2A20C */
+}
+
+.navigation {
+    background-color: transparent; 
+}
+
+.navigation a{
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.navigation a:hover{
+    color:rgb(228, 124, 33);
+}
+
+section{
+    padding: 100px 50px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    background: url("images/benny-rotlevy-I2EpqyPym78-unsplash.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/overlay.png");
+    background-size: cover; 
+    background-position: center; 
+    z-index: 1; 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.text{
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    position: relative;
+    margin-bottom: 250px;
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-size: 118px;
+}
+
+.main-btn {
+    position: relative;
+    text-decoration: none;
+    color: aliceblue; 
+    display: inline-block;
+    /* margin-left: 38vw; */
+    font-size: x-large;
+    transition: font-size 0.3s ease;
+    z-index: 2;
+  }
+  
+  .main-btn::before,
+  .main-btn::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 70px;
+    height: 1px;
+    background-color: aliceblue; 
+    transition: width 0.3s ease;
+  }
+  
+  .main-btn::before {
+    left: -15px;
+  }
+  
+  .main-btn::after {
+    right: -15px;
+  }
+  
+  .main-btn:hover::before,
+  .main-btn:hover::after {
+    background-color: #F28705;
+    width: 100px;
+  }
+
+  /* CHOOSE A COLOR */
+  .main-btn:hover{
+    color: #F28705; 
+    font-size: 26px;
+  }
+
+  .carousel {
+  position: relative;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.slides {
+  display: flex;
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+}
+
+.carousel-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel-title {
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+  
